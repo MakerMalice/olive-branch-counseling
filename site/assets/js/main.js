@@ -189,7 +189,7 @@
       var action = form.getAttribute('action');
       if (!action) {
         // Draft site: no form service is connected yet.
-        status.textContent = 'This form isn’t connected yet. For now, please call (609) 817-8071.';
+        status.textContent = 'This form isn’t connected yet. For now, please call (609) 326-3955.';
         status.hidden = false;
         return;
       }
@@ -202,7 +202,7 @@
           status.textContent = 'Thank you. Your message reached Brenda, and she’ll be in touch soon.';
         })
         .catch(function () {
-          status.textContent = 'Something went wrong sending your message. Please try again or call (609) 817-8071.';
+          status.textContent = 'Something went wrong sending your message. Please try again or call (609) 326-3955.';
         })
         .finally(function () { status.hidden = false; btn.disabled = false; });
     });
